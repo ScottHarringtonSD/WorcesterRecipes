@@ -1,10 +1,14 @@
-import Recipe from "../index/Recipe";
+import { useParams } from "react-router-dom";
+import { RecipeFiles } from "../data/RecipeFiles";
 
-interface RecipePageProps {
-  recipe: Recipe;
-}
+const RecipePage = () => {
+  const { id } = useParams<{ id: string }>();
+  const recipe = RecipeFiles.find((rec) => rec.id === parseInt(id!));
 
-const RecipePage = ({ recipe }: RecipePageProps) => {
+  if (!recipe) {
+    return <h2>Recipe not found</h2>;
+  }
+
   return (
     <div>
       <h2 className="text-7xl italic">{recipe.title}</h2>

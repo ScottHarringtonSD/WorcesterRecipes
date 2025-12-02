@@ -31,13 +31,10 @@ function App() {
               path="/Recipes"
               element={<RecipeSearchPage recipes={RecipeFiles} />}
             />
-            <Route
-              path="/Recipes/:id"
-              element={<RecipePage recipe={RecipeFiles[0]} />}
-            />
+            <Route path="/Recipes/:id" element={<RecipePage />} />
           </Routes>
         </div>
-        <footer className=" text-font bg-red-800 absolute bottom-0 mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-200 w-screen h-14">
+        <footer className=" text-font bg-red-800 bottom-0 mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-200 w-screen h-14 sticky">
           <p className="order-2 md:order-1 mt-8 md:mt-0 mx-56 inline-flex">
             {" "}
             &copy; Harrington-Bithell Enterprises, 2025.{" "}

@@ -8,8 +8,12 @@ interface RecipeSearchPageProps {
 const RecipeSearchPage = ({ recipes }: RecipeSearchPageProps) => {
   return (
     <>
-      <h1 className="text-7xl italic">Search Recipes</h1>
-      <div className="mx-auto flex place-content-center gap-2 grid-cols-3 p-2">
+      <h1 className="text-7xl italic text-center">Search Recipes</h1>
+      <p className="text-3xl text-center">
+        Search through a selection of salivating suppers and sumptuous snacks,
+        guaranteed to satiate you and silence any sufferings of your stomach.{" "}
+      </p>
+      <div className="p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto">
         {recipes.map((recipe, index) => (
           <RecipeCard key={index} recipe={recipe} />
         ))}
