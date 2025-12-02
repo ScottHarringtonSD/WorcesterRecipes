@@ -21,9 +21,9 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
         <h1 className="mb-1 text-xl tracking-tight pl-1 pt-1 w-full text-white">
           {recipe.title}
         </h1>
-        <div className="text-gray-300 pl-1 w-full">By</div>
-        <div className="text-gray-300 pl-1 w-full">{recipe.chef}</div>
-        <div className="text-white pt-1 pl-1 flex-grow">
+        <div className="text-gray-300 w-full">By</div>
+        <div className="text-gray-300 w-full">{recipe.chef}</div>
+        <div className="text-white pt-1 flex-grow">
           {recipe.preamble && recipe.preamble.length > 80
             ? recipe.preamble.substring(0, 100) + "..."
             : recipe.preamble}

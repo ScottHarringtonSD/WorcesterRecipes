@@ -1,4 +1,5 @@
 import Recipe from "../index/Recipe";
+import Review from "../index/Review";
 import example from "./images/example.png"
 
 export const RecipeFiles =  [
@@ -37,7 +38,8 @@ export const RecipeFiles =  [
       "Forgotten to remove the plastic film? Don’t worry — just let it dissolve on the bottom of the pan and your housemates will be none the wiser!",
       "Like your noodles heavy? Try doubling the quantity of peanut butter for a Fun Time™",
     ],
-    pictureLink: example
+    pictureLink: example,
+    reviews: [new Review("This dish made me feel full", "NinaTheMenace", 5)]
   }),
 new Recipe({
     id: 2,
