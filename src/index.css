@@ -22,6 +22,10 @@ div, p{
   font-style: normal;
 }
 
+footer{
+  min-height: 56px;
+}
+
 .card-height {
   height: 100%;
   width: 100%;

@@ -7,52 +7,58 @@ const RecipePage = () => {
   const recipe = RecipeFiles.find((rec) => rec.id === parseInt(id!));
 
   if (!recipe) {
-    return <h2>Recipe not found</h2>;
+    return <h2 className="text-4xl p-5">Recipe not found. You are lost.</h2>;
   }
 
   return (
     <div>
       <h1 className="text-8xl text-center pt-5 px-5">{recipe.title}</h1>
-      <h2 className="text-2xl p-2 w-full">By</h2>
-      <h2 className="text-2xl p-2 w-full">{recipe.chef}</h2>
-      <p className="text-xl text-center p-2">{recipe.preamble}</p>
-      <p className="text-xl text-center p-2">{recipe.servingSize}</p>
+      <h2 className="text-2xl">By</h2>
+      <h2 className="text-2xl">{recipe.chef}</h2>
+      <p className="text-xl">{recipe.servingSize}</p>
+
+      <div className="flex items-start p-4">
+        <img
+          src={recipe.pictureLink}
+          alt={recipe.title}
+          className="rounded-lg object-cover mr-4 w-2/3 h-auto"
+        />
+
+        <div className="m-20">
+          <p className="text-xl">{recipe.preamble}</p>
+        </div>
+      </div>
+
       <h2 className="p-3 text-4xl italic">Ingredients</h2>
       <ul>
         {recipe.ingredients.map((ingredient, index) => (
-          <li>{ingredient}</li>
+          <li key={index}>{ingredient}</li>
         ))}
       </ul>
 
       <h2 className="p-3 text-4xl italic">Instructions</h2>
       <ul>
         {recipe.instructions.map((instruction, index) => (
-          <li>{instruction}</li>
+          <li key={index}>{instruction}</li>
         ))}
       </ul>
+
       {recipe.tips && (
         <>
           <h2 className="p-3 text-4xl italic">Tips</h2>
           <ul>
             {recipe.tips.map((tip, index) => (
-              <li>{tip}</li>
+              <li key={index}>{tip}</li>
             ))}
           </ul>
         </>
       )}
-      {recipe.reviews && (
-        <>
-          <h2 className="p-3 text-4xl italic">Reviews</h2>
-          {recipe.reviews.map((tip, index) => (
-            <div>fun</div>
-          ))}
-        </>
-      )}
+
       {recipe.reviews && (
         <>
           <h2 className="p-3 text-4xl italic">Reviews</h2>
           {recipe.reviews.map((review, index) => (
-            <RecipeReview review={review} />
+            <RecipeReview key={index} review={review} />
           ))}
         </>
       )}
