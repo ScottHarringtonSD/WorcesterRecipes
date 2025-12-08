@@ -9,7 +9,7 @@ export const RecipeFiles =  [
     chef: "Alasdair 'The Captain' Casperd",
     type: "meal",
     servingSize: "Serves 2 Scotts, 3 Ninas or 5 Henrys",
-    preamble: "Pork peanut noodles was a staple of the south parade massive, feeding the hungry horde that lived there with volume and flavour. Read on to find out the secrets of this dish!",
+    preamble: "Pork peanut noodles was a staple of the south parade massive, feeding the hungry horde that lived there with volume and flavour. However, this beast is a hefty dish, with peanut sauce ensuring a stuffed stomach and happy customers. Read on to find out the secrets of this dish!",
     ingredients: [
       "~500g packet of minced pork",
       "6 egg noodle nests",
@@ -39,7 +39,7 @@ export const RecipeFiles =  [
       "Like your noodles heavy? Try doubling the quantity of peanut butter for a Fun Time™",
     ],
     pictureLink: example,
-    reviews: [new Review("This dish made me feel full", "NinaTheMenace", 5)]
+    reviews: [new Review("This dish made me feel full", "NinaTheMenace", 5, 9)]
   }),
 new Recipe({
     id: 2,

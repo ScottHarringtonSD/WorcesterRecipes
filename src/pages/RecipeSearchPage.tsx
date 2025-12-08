@@ -14,6 +14,7 @@ const RecipeSearchPage = ({ recipes }: RecipeSearchPageProps) => {
         guaranteed to satiate you and silence any sufferings of your stomach.{" "}
       </p>
       <h2 className="text-5xl p-6">Meals</h2>
+      <hr className="border-0 bg-red-800" style={{ height: "2px" }} />
       <div className="p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto">
         {recipes
           .filter((rec) => rec.type === "meal")
@@ -22,6 +23,7 @@ const RecipeSearchPage = ({ recipes }: RecipeSearchPageProps) => {
           ))}
       </div>
       <h2 className="text-5xl p-6">Drinks</h2>
+      <hr className="border-0 bg-red-800" style={{ height: "2px" }} />
       <div className="p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto">
         {recipes
           .filter((rec) => rec.type === "drink")

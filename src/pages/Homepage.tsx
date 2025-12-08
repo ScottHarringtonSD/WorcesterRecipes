@@ -12,24 +12,26 @@ const Homepage = () => {
     navigate(`/Recipes/${id}`);
   };
   return (
-    <div>
+    <div className="text-center">
       <h1 className="text-8xl italic p-10">A Taste Of Worcester</h1>
-      <span className="p-2">
-        <button
-          className="bg-red-800 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-3xl"
-          onClick={handleSearchOnClick}
-        >
-          Search Recipes
-        </button>
-      </span>
-      <span className="p-2">
-        <button
-          className="bg-red-800 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-3xl hover:animate-bounce"
-          onClick={handleHungryClick}
-        >
-          I'm feeling hungry!
-        </button>
-      </span>
+      <div className="grid grid-cols-1 sm:grid-cols-2">
+        <span className="p-2 text-center sm:text-right">
+          <button
+            className="bg-red-800 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-3xl"
+            onClick={handleSearchOnClick}
+          >
+            Search Recipes
+          </button>
+        </span>
+        <span className="p-2 text-center sm:text-left">
+          <button
+            className="bg-red-800 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-3xl hover:animate-bounce"
+            onClick={handleHungryClick}
+          >
+            I'm feeling hungry!
+          </button>
+        </span>
+      </div>
     </div>
   );
 };

@@ -8,11 +8,13 @@
 h1{
   font-family: "Lobster Two", sans-serif;
   font-style: italic;
+    text-align: center;
 }
 
 h2{
   font-family: "Lobster Two", sans-serif;
   font-style: italic;
+    text-align: center;
 }
 
 div, p{
