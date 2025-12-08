@@ -1,6 +1,7 @@
 import Recipe from "../index/Recipe";
 import Review from "../index/Review";
 import example from "./images/example.png"
+import ChorizoChicken from "./images/ChorizoChicken.png"
 
 export const RecipeFiles =  [
   new Recipe({
@@ -38,45 +39,34 @@ export const RecipeFiles =  [
       "Forgotten to remove the plastic film? Don’t worry — just let it dissolve on the bottom of the pan and your housemates will be none the wiser!",
       "Like your noodles heavy? Try doubling the quantity of peanut butter for a Fun Time™",
     ],
-    pictureLink: example,
-    reviews: [new Review("This dish made me feel full", "NinaTheMenace", 5, 9)]
+    pictureLink: example
   }),
 new Recipe({
     id: 2,
-    title: "Punchy Pork Noodles",
-    chef: "Alasdair 'The Captain' Casperd",
+    title: "Chorizo Chicken",
+    chef: "The Stubbs family",
     type: "meal",
-    servingSize: "Serves 2 Scotts, 3 Ninas or 5 Henrys",
-    preamble: "Pork peanut noodles (affectionately named \"Sloppy Caspepe\") was a staple of the south parade massive, feeding the hungry horde that lived there with volume and flavour. Read on to find out the secrets of this dish!",
+    servingSize: "Serves 3?",
+    preamble: "This dish was a family favourite growing up; a little taste of Andalucía in rural South Derbyshire, and with a story of friendship to match the warming comfort of the dish… In the early 2000s my mother began working as a French and German teacher. It was difficult, and she often spent long periods after the school day ended in her classroom preparing lessons. However, during this time she befriended a fellow teacher named Julia. Julia was a veteran teacher and helped my mother to settle into the school, and they soon became good friends. However, all too soon Julia left South Derbyshire to a new life in the sun in southern Spain. Before long, my mother made the journey to Spain to visit Julia. A far cry from the run-down corridors of William Allit secondary school (which has now been closed and condemned for demolition), Julia’s new home was breathtaking. Surrounded by orange orchards and beautiful countryside, it felt like paradise. It was here that my mother was introduced to Chorizo Chicken for the first time. Julia had tried it in a local restaurant and loved it so much that she took the recipe home. When my mother returned home, she brought back not just fond memories of time well spent with a treasured friend, but also the recipe for this dish. It became a staple in our house, and when I left for university, I missed it so much that I asked my mother for the recipe. A recipe that will soon make another step in its journey from Spain to you… Sadly, due to dietary restrictions I never had the opportunity to make this for my housemates, except for one occasion, when I made it for my housemate Nina, who subsequently fell violently ill and had to be hospitalized.",
     ingredients: [
-      "~500g packet of minced pork",
-      "6 egg noodle nests",
-      "2 garlic cloves, finely chopped",
-      "3 tablespoons Thai red curry paste",
-      "250ml chicken stock",
-      "1 can coconut milk",
-      "2 tablespoons soy sauce",
-      "120g smooth peanut butter",
-      "100g baby spinach",
-      "juice of 2 limes",
-      "Sriracha",
-      "(Optional) chopped cacahouettes, to serve",
+    "Chorizo, sliced into disks",
+    "Chicken breast, cut into large chunks",
+    "1 Onion",
+    "Garlic",
+    "1 Tin chopped tomatoes",
+    "Paprika",
+    "Bay leaf",
+    "Chicken stock (actually, you’re supposed to use sherry or something, but my mum couldn’t remember)"
     ],
     instructions: [
-      "In a large pan, fry the pork mince on high heat until it is browned all over.",
-      "Meanwhile, start cooking the noodles.",
-      "Add the garlic and curry paste and cook for another 2 minutes, reducing the heat to medium.",
-      "Send Scott out to get the ingredients you forgot to put on the Tesco order.",
-      "Add the stock, coconut milk and soy sauce and bring to a simmer.",
-      "Add the peanut butter, mix well and cook for at least 2 more minutes.",
-      "When ready, add in the noodles, along with the baby spinach, lime juice and a few generous squirts of sriracha.",
-      "Mix well as you let the noodles warm through for a minute or two, then serve.",
-    ],
-    tips: [
-      "Forgotten to remove the plastic film? Don’t worry — just let it dissolve on the bottom of the pan and your housemates will be none the wiser!",
-      "Like your noodles heavy? Try doubling the quantity of peanut butter for a Fun Time™",
-    ],
-    pictureLink: example
+    "Coat the chicken in paprika and fry to seal.",
+    "Remove the chicken from the pan and set aside, then fry the onion together with the chorizo and garlic.",
+    "Add the tin of chopped tomatoes, bay leaves, and chicken stock, and bring to the boil.",
+    "Transfer to a large casserole dish and put in the oven for 1 hour at 180 degrees, occasionally checking that it hasn’t dried out and adding additional stock as necessary.",
+    "Serve with couscous."
+],
+    pictureLink: ChorizoChicken,
+    reviews: [new Review("This dish almost fucking killed me", "Nina", 1, 7), new Review("By not specifying the quantity of chicken stock, your recipe is dangerously open to interpretation. I will be reporting this to trading standards immediately!", "Amrit", 0, 0), new Review("I replaced the onions and garlic with more chorizo, and it worked great!”", "Adam", 5, 2)]
   }),
 new Recipe({
     id: 3,

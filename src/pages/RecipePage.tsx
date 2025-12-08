@@ -1,10 +1,12 @@
 import { useParams } from "react-router-dom";
 import { RecipeFiles } from "../data/RecipeFiles";
 import RecipeReview from "../components/RecipeReview";
+import { useState } from "react";
 
 const RecipePage = () => {
   const { id } = useParams<{ id: string }>();
   const recipe = RecipeFiles.find((rec) => rec.id === parseInt(id!));
+  const [acceptCookies, setAcceptCookies] = useState(false);
 
   if (!recipe) {
     return <h2 className="text-4xl p-5">Recipe not found. You are lost.</h2>;
@@ -16,6 +18,41 @@ const RecipePage = () => {
       <h2 className="text-2xl">By</h2>
       <h2 className="text-2xl">{recipe.chef}</h2>
       <p className="text-xl text-center">{recipe.servingSize}</p>
+
+      {recipe.id === 2 &&
+        (!acceptCookies ? (
+          <div className="border-2 border-red-800 rounded-md">
+            <h1 className="text-center text-3xl">Cookies</h1>
+            <p className="text-center p-3">
+              We use essential cookies to make our site work. With your consent,
+              we may also use non-essential cookies to improve user experience
+              and analyze website traffic. We are desperate to use and abuse
+              your data and so are our partners. Thanks in Advance!
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2">
+              <span className="p-2 text-center sm:text-right">
+                <button
+                  className="bg-red-200 hover:bg-red-200 text-white font-bold py-2 px-4 rounded text-xl"
+                  onClick={() => setAcceptCookies(true)}
+                >
+                  Reject Cookies :(
+                </button>
+              </span>
+              <span className="p-2 text-center sm:text-left">
+                <button
+                  className="bg-red-800 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-xl hover:animate-spin"
+                  onClick={() => setAcceptCookies(true)}
+                >
+                  Accept Cookies
+                </button>
+              </span>
+            </div>
+          </div>
+        ) : (
+          <div className="border-2 border-red-800 rounded-md text-center">
+            <div className="p-5">Thank you for accepting cookies ;)</div>
+          </div>
+        ))}
       <hr className="border-0 bg-red-800 mt-3" style={{ height: "2px" }} />
       <div className="flex flex-col sm:flex-row items-start p-4">
         <img
@@ -46,9 +83,9 @@ const RecipePage = () => {
         {recipe.instructions.map((instruction, index) => (
           <li
             key={index}
-            className="before:content-['–'] before:mr-2 before:text-red-800 before:text-xl"
+            className="before:content-[''] before:mr-2 before:text-red-800 before:text-xl"
           >
-            {instruction}
+            {index + 1}. {instruction}
           </li>
         ))}
       </ul>
@@ -75,7 +112,9 @@ const RecipePage = () => {
           <hr className="border-0 bg-red-800 mt-3" style={{ height: "2px" }} />
           <h2 className="p-3 text-4xl italic">Reviews</h2>
           {recipe.reviews.map((review, index) => (
-            <RecipeReview key={index} review={review} />
+            <div className="pb-3">
+              <RecipeReview key={index} review={review} />
+            </div>
           ))}
         </div>
       )}
