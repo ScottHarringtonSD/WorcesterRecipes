@@ -64,7 +64,7 @@ const RecipePage = () => {
         />
 
         <div className="flex-1">
-          <p className="text-xl">{recipe.preamble}</p>
+          <p className="text-2xl">{recipe.preamble}</p>
         </div>
       </div>
       {recipe.id === 2 && (
@@ -86,7 +86,7 @@ const RecipePage = () => {
         {recipe.ingredients.map((ingredient, index) => (
           <li
             key={index}
-            className="before:content-['–'] before:mr-2 before:text-red-800 before:text-xl"
+            className="before:content-['–'] before:mr-2 before:text-red-800 before:text-xl text-xl"
           >
             {ingredient}
           </li>
@@ -111,7 +111,7 @@ const RecipePage = () => {
         {recipe.instructions.map((instruction, index) => (
           <li
             key={index}
-            className="before:content-[''] before:mr-2 before:text-red-800 before:text-xl"
+            className="before:content-[''] before:mr-2 before:text-red-800 before:text-xl text-xl"
           >
             {index + 1}. {instruction}
           </li>
@@ -126,7 +126,7 @@ const RecipePage = () => {
             {recipe.tips.map((tip, index) => (
               <li
                 key={index}
-                className="before:content-['–'] before:mr-2 before:text-red-800 before:text-xl"
+                className="before:content-['–'] before:mr-2 before:text-red-800 before:text-xl text-xl"
               >
                 {tip}
               </li>

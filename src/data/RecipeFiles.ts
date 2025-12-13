@@ -183,7 +183,7 @@ new Recipe({
 new Recipe({
     id: 6,
     title: "Toad in the Hole",
-    chef: "Tom Bombadil",
+    chef: "Thomas Bithell",
     type: "meal",
     servingSize: "Serves family of 5, or 2 hungry students",
     preamble: "Gather 'round, hungry souls, and prepare to embark on a culinary adventure that’ll leave your taste buds dancing and your stomachs singing! Our star dish, Toad in the Hole with Onion Gravy, is so hearty it could probably wear a belt and RSVP to Thanksgiving dinner—unless, of course, the chef (that’s me!) has indulged a bit too much, in which case, I'm just going to roll over and call it a “hole in one!” This dish is the perfect remedy for those nights when you want comfort food that’s simpler than counting the number of sausages you secretly devour—and trust me, that number might just be higher than you'd care to admit! So grab your apron, tie it tight (because that’s where it’s going to stay after the first bite), and let’s get cooking!",

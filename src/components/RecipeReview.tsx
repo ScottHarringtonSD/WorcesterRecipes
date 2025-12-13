@@ -11,8 +11,8 @@ const RecipeReview = ({ review }: RecipeReviewProps) => {
         <p className="font-bold">
           {review.commenter} - {review.rating} / 5
         </p>
-        <p>"{review.text}"</p>
-        <p className="text-red-800">
+        <p className="text-xl">"{review.text}"</p>
+        <p className="text-red-950 text-xl">
           {review.peopleFoundHelpful} people found this helpful
         </p>
       </div>

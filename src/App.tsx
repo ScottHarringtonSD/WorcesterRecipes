@@ -7,7 +7,7 @@ import RecipePage from "./pages/RecipePage";
 
 function App() {
   return (
-    <div className="App h-screen flex flex-col">
+    <div className="App min-h-screen flex flex-col">
       <BrowserRouter>
         <header className="bg-red-800 text-white sticky top-0 z-10 text-font w-screen">
           <div className="max-w-5xl mx-auto flex p-4 items-center justify-between">
@@ -24,7 +24,7 @@ function App() {
             </div>
           </div>
         </header>
-        <div className="flex-grow mx-16">
+        <div className="flex-grow mx-16 pb-3">
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { RecipeFiles } from "../data/RecipeFiles";
+import RecipeImageCarousel from "../components/RecipeImageCarousel";
 
 const Homepage = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Homepage = () => {
   };
   return (
     <div className="text-center">
-      <h1 className="text-8xl italic p-10">A Taste Of Worcester</h1>
+      <h1 className="text-8xl italic p-10 pt-20">A Taste Of Worcester</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2">
         <span className="p-2 text-center sm:text-right">
           <button
@@ -32,6 +33,7 @@ const Homepage = () => {
           </button>
         </span>
       </div>
+      <RecipeImageCarousel />
     </div>
   );
 };
