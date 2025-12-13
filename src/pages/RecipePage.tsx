@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import { RecipeFiles } from "../data/RecipeFiles";
 import RecipeReview from "../components/RecipeReview";
 import { useState } from "react";
+import Lurpak from "../data/images/LurpakAd.png";
+import Amazon from "../data/images/AmazonAd.png";
 
 const RecipePage = () => {
   const { id } = useParams<{ id: string }>();
@@ -65,6 +67,19 @@ const RecipePage = () => {
           <p className="text-xl">{recipe.preamble}</p>
         </div>
       </div>
+      {recipe.id === 2 && (
+        <>
+          <hr
+            className="border-0 bg-red-800 mt-3 mb-3"
+            style={{ height: "2px" }}
+          />
+          <img
+            src={Amazon}
+            alt={recipe.title}
+            className="rounded-lg object-cover mr-4 w-full h-auto animate-pulse"
+          />
+        </>
+      )}
       <hr className="border-0 bg-red-800 mt-3" style={{ height: "2px" }} />
       <h2 className="p-3 text-4xl italic">Ingredients</h2>
       <ul className="list-none pl-5">
@@ -77,6 +92,19 @@ const RecipePage = () => {
           </li>
         ))}
       </ul>
+      {recipe.id === 2 && (
+        <>
+          <hr
+            className="border-0 bg-red-800 mt-3 mb-12"
+            style={{ height: "2px" }}
+          />
+          <img
+            src={Lurpak}
+            alt={recipe.title}
+            className="rounded-lg object-cover mr-4 w-full h-auto animate-bounce"
+          />
+        </>
+      )}
       <hr className="border-0 bg-red-800 mt-3" style={{ height: "2px" }} />
       <h2 className="p-3 text-4xl italic">Instructions</h2>
       <ul className="list-none pl-5">
@@ -117,6 +145,18 @@ const RecipePage = () => {
             </div>
           ))}
         </div>
+      )}
+
+      {recipe.warning && (
+        <>
+          <div className="pb-3">
+            <hr
+              className="border-0 bg-red-800 mt-3"
+              style={{ height: "2px" }}
+            />
+          </div>
+          <p className="pb-3 text-xs">{recipe.warning}</p>
+        </>
       )}
     </div>
   );

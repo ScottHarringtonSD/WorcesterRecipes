@@ -11,6 +11,7 @@ export default class Recipe {
   instructions: string[];
   tips: string[] | null;
   reviews: Review[] | null;
+  warning: string | null;
   pictureLink: string | undefined;
 
   constructor({
@@ -24,6 +25,7 @@ export default class Recipe {
     instructions = [],
     tips = null,
     reviews = null,
+    warning = null,
     pictureLink = undefined,
   }: {
     id: number;
@@ -36,6 +38,7 @@ export default class Recipe {
     instructions?: string[];
     tips?: string[] | null;
     reviews?: Review[] | null;
+    warning?: string | null;
     pictureLink?: string | undefined;
   }) {
     this.id = id;
@@ -49,5 +52,6 @@ export default class Recipe {
     this.tips = tips;
     this.reviews = reviews;
     this.pictureLink = pictureLink;
+    this.warning = warning;
   }
 }
