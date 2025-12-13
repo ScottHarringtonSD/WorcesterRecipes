@@ -5,6 +5,8 @@ import ChorizoChicken from "./images/ChorizoChicken.png"
 import Salmon from "./images/Salmon.png"
 import Paella from "./images/Paella.png"
 import Sludge from "./images/Sludge.png"
+import Toad from "./images/Toad.png"
+import Shakshuka from "./images/Shakshuka.png"
 
 export const RecipeFiles =  [
   new Recipe({
@@ -181,31 +183,66 @@ new Recipe({
 new Recipe({
     id: 6,
     title: "Toad in the Hole",
-    chef: "Maddy Underwood",
+    chef: "Tom Bombadil",
     type: "meal",
-    servingSize: "Serves 4",
-    preamble: "Salmon is the only food that sustained our chef throughout her entire undergrad and is the sole (hehe) reason she survived. It is said that at one point her skin began to turn orange from excessive salmon exposure, but she was saved by her switch into becoming a pasta bake expert. This meal is an absolute worcester classic, and was loved by many a housemate also.",
+    servingSize: "Serves family of 5, or 2 hungry students",
+    preamble: "Gather 'round, hungry souls, and prepare to embark on a culinary adventure that’ll leave your taste buds dancing and your stomachs singing! Our star dish, Toad in the Hole with Onion Gravy, is so hearty it could probably wear a belt and RSVP to Thanksgiving dinner—unless, of course, the chef (that’s me!) has indulged a bit too much, in which case, I'm just going to roll over and call it a “hole in one!” This dish is the perfect remedy for those nights when you want comfort food that’s simpler than counting the number of sausages you secretly devour—and trust me, that number might just be higher than you'd care to admit! So grab your apron, tie it tight (because that’s where it’s going to stay after the first bite), and let’s get cooking!",
     ingredients: [
-      "1 leek, thinly sliced",
-      "250ml stock",
-      "100g creme fraiche",
-      "140g frozen peas",
-      "140g frozen broad beans (or another frozen green if like me you think these are weird texturally)",
-      "4 skinless salmon fillets",
-      "small bunch of chives",
-      "as much mash as required to fill the hole in your stomach (or heart ❤️ )",
-    ],
+      "For the hole:",
+    "150g plain flour",
+    "300ml milk",
+    "1 large egg",
+    "Punch of salt",
+    "For the toad:",
+    "6-10 juicy pork sausages (or veggie)",
+    "For the gravy:",
+    "2/3 large red/white onions",
+    "1 tablespoon flour",
+    "Glug of oil or knob of butter",
+    "Stock",
+    "Alcohol (leftover wine, beer)",
+    "Dash of gravy browning"
+],
     instructions: [
-      "Heat some oil in a pan (that has a lid!).",
-      "Cook the leeks for 5-10 minutes until soft but not coloured.",
-      "Add in the stock and simmer for a few mins.",
-      "Add the creme fraiche and season (salt and pepper for the culinarily uneducated) and cook for another minute.",
-      "Stir in the veggies, nestle in the salmon fillets, turn down to simmer and cover (with the lid from earlier).",
-      "Cook for 12 - 15 mins until the salmon is cooked through",
-      "Sprinkle on some chopped chives and serve with the mash (that you have definitely remembered to make at the same time right?).",
-    ],
-    tips: [
-      "DO NOT FORGET THE MASH!",
-    ],
-    pictureLink: Salmon,
+    "Mix the batter together with a lift and leave to stand.",
+    "Put a glug of sunflower oil in a tray with the sausages and put in the oven to brown.",
+    "Once browned, pour the batter over the sausages and bake for 30-45 minutes depending on the depth of the tray. Do not open the oven door if possible.",
+    "Whilst in the oven, work on the gravy. Caramelise the onions in a pan with a nice knob of butter.",
+    "Sprinkle some flour over the onions. Slowly add the alcohol/stock to get a smooth, thick gravy. Do not substitute gravy browning for soy sauce; the result is incredibly salty.",
+    "Serve hot with some greens."
+],
+    pictureLink: Toad,
+    }),
+  new Recipe({
+    id: 7,
+    title: "Shakshuka",
+    chef: "Guy Jabby-Doory",
+    type: "meal",
+    servingSize: "Serves 2",
+    preamble: "Shakshuka is the ultimate breakfast-for-dinner dish, where sunny-side-up eggs shine like little yolky suns in a rich, spiced tomato heaven! This dish makes you feel like you’ve been transported to a bustling Mediterranean market, where the scent of sautéed onions and garlic fills the air. While the veggies sauté, you might find yourself pondering the philosophical question: is it too early for a glass of wine? (Spoiler alert: it's never too early when shakshuka is involved!) Perfect for sharing or, let's be honest, for keeping all to yourself if you plan on hiding away with a pitta or two. So, roll up those sleeves and prepare to fry up some deliciousness!",
+    ingredients: [
+    "2 small onions",
+    "1-2 peppers",
+    "Olive oil",
+    "2 cloves garlic",
+    "1 tbsp tomato paste",
+    "½ tsp smoked paprika",
+    "½ tsp paprika",
+    "½ tsp cumin",
+    "½ tsp dried coriander",
+    "1 can of chopped tomatoes",
+    "Chilli flakes to taste",
+    "4 eggs",
+    "Feta",
+    "Parsley",
+    "Pitta, to serve"
+],
+    instructions: [
+    "Slice or roughly dice onions and peppers and add to a pan on medium heat with a tablespoon of olive oil.",
+    "Fry the vegetables until soft, then add minced garlic. Once aromatic, add spices and cook for 30 seconds, then add tomato paste and cook for another 30 seconds.",
+    "Add chopped tomatoes and let simmer until the sauce is reduced and flavourful.",
+    "Make four wells in the sauce and crack an egg in each of these. Cover with a lid and cook until the white is just set but the yolk is runny.",
+    "Remove the pan from the heat, add chopped parsley and crumbled feta, and serve hot with pitta bread on the side."
+],
+    pictureLink: Shakshuka,
     }),]
