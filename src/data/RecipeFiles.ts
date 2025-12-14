@@ -7,6 +7,7 @@ import Paella from "./images/Paella.png"
 import Sludge from "./images/Sludge.png"
 import Toad from "./images/Toad.png"
 import Shakshuka from "./images/Shakshuka.png"
+import Sting from "./images/Sting.png"
 
 export const RecipeFiles =  [
   new Recipe({
@@ -245,4 +246,25 @@ new Recipe({
     "Remove the pan from the heat, add chopped parsley and crumbled feta, and serve hot with pitta bread on the side."
 ],
     pictureLink: Shakshuka,
-    }),]
+    }),new Recipe({
+    id: 8,
+    title: "The Sting",
+    chef: "Earl of Worcester",
+    type: "drink",
+    servingSize: "Serves 1",
+    preamble: "The Lionheart. The Swanbite. The Red Kate. Many have sought to reach the lofty heights of their predecessor, some even attempting to replace it, but none have ever held a candle to the true original sting. A drink named no doubt for its lethality, the sting will go down in history as a college legend from a time when people were allowed to have fun.",
+    ingredients: [
+      "1 orange VK",
+      "dark rum, 2 shots",
+      "light rum, 2 shots",
+      "One shot of Tequila"
+    ],
+    instructions: [
+      "Bung em all in a glass and pray."
+    ],
+    tips: [
+    "If you want a more pleasant evening, try the Sting Lite, only adding 1 shot of each alcohol instead.",
+],
+    pictureLink: Sting,
+    warning: "Warning: This drink will cause vomiting, intoxication, and a dangerouly high chance of you getting with someone you don't know very well. This was banned for a reason."
+  }),]

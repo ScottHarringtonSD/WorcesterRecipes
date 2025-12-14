@@ -7,6 +7,7 @@ import Paella from "../data/images/Paella.png";
 import Sludge from "../data/images/Sludge.png";
 import Toad from "../data/images/Toad.png";
 import Shakshuka from "../data/images/Shakshuka.png";
+import Sting from "../data/images/Sting.png";
 
 function RecipeImageCarousel() {
   const settings = {
@@ -50,6 +51,9 @@ function RecipeImageCarousel() {
         </div>
         <div>
           <img src={example} alt="Food" className=" h-64 w-full object-cover" />
+        </div>
+        <div>
+          <img src={Sting} alt="Drink" className=" h-64 w-full object-cover" />
         </div>
       </Slider>
     </div>
