@@ -1,14 +1,32 @@
-import { Routes, Route, BrowserRouter, NavLink } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  BrowserRouter,
+  NavLink,
+  useLocation,
+} from "react-router-dom";
 import "./App.css";
 import Homepage from "./pages/Homepage";
 import RecipeSearchPage from "./pages/RecipeSearchPage";
 import { RecipeFiles } from "./data/RecipeFiles";
 import RecipePage from "./pages/RecipePage";
+import { useEffect } from "react";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 function App() {
   return (
     <div className="App min-h-screen flex flex-col">
       <BrowserRouter>
+        <ScrollToTop />
         <header className="bg-red-800 text-white sticky top-0 z-10 text-font w-screen">
           <div className="max-w-5xl mx-auto flex p-4 items-center justify-between">
             <NavLink to="/">
