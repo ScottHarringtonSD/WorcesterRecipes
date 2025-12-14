@@ -16,7 +16,9 @@ const RecipePage = () => {
 
   return (
     <div>
-      <h1 className="text-8xl text-center pt-5 px-5">{recipe.title}</h1>
+      <h1 className="sm:text-8xl text-5xl text-center pt-5 px-5">
+        {recipe.title}
+      </h1>
       <h2 className="text-2xl">By</h2>
       <h2 className="text-2xl">{recipe.chef}</h2>
       <p className="text-xl text-center">{recipe.servingSize}</p>
@@ -64,7 +66,7 @@ const RecipePage = () => {
         />
 
         <div className="flex-1">
-          <p className="text-2xl">{recipe.preamble}</p>
+          <p className="sm:text-2xl text-xl">{recipe.preamble}</p>
         </div>
       </div>
       {recipe.id === 2 && (
