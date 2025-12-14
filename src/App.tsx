@@ -24,7 +24,7 @@ function App() {
             </div>
           </div>
         </header>
-        <div className="flex-grow mx-16 pb-3">
+        <div className="flex-grow sm:mx-16 mx-2 pb-3">
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route
@@ -35,7 +35,7 @@ function App() {
           </Routes>
         </div>
         <footer className="text-font bg-red-800 flex justify-between items-center text-sm text-white w-full">
-          <p className="order-2 md:order-1 mt-8 md:mt-0 mx-56 inline-flex text-white">
+          <p className="order-2 md:order-1 mt-8 md:mt-0 sm:mx-56 inline-flex text-white text-xs mx-8">
             &copy; Harrington-Bithell Enterprises, 2025.
           </p>
         </footer>

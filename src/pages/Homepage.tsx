@@ -14,7 +14,9 @@ const Homepage = () => {
   };
   return (
     <div className="text-center">
-      <h1 className="text-8xl italic p-10 pt-20">A Taste Of Worcester</h1>
+      <h1 className="sm:text-8xl text-5xl italic p-10 pt-20">
+        A Taste Of Worcester
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2">
         <span className="p-2 text-center sm:text-right">
           <button
