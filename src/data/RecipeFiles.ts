@@ -8,6 +8,7 @@ import Sludge from "./images/Sludge.png"
 import Toad from "./images/Toad.png"
 import Shakshuka from "./images/Shakshuka.png"
 import Sting from "./images/Sting.png"
+import SausageCass from "./images/SausageCass.png"
 
 export const RecipeFiles =  [
   new Recipe({
@@ -267,4 +268,27 @@ new Recipe({
 ],
     pictureLink: Sting,
     warning: "Warning: This drink will cause vomiting, intoxication, and a dangerouly high chance of you getting with someone you don't know very well. This was banned for a reason."
-  }),]
+  }),
+new Recipe({
+    id: 9,
+    title: "Sausage Meat Casserole",
+    chef: "The Noble Family",
+    type: "meal",
+    servingSize: "Serves 2",
+    preamble: "Hear ye, all those who may read, this gift which you will receive, each time you bake Sausage and ‘tate, may cause some guests never to leave!",
+    ingredients: [
+    "Sausage meat 800g",
+    "Assorted root veg - potatoes, parsnips, swede, carrots, sweet potatoes 2kg or so",
+    "2 medium/large white onions",
+    "Chicken stock",
+    "Sage leaves (optional)"
+],
+    instructions: [
+    "Slice the veg into rounds, and layer in a big casserole with chunks of pork, chopped sage leaves, salt and pepper.",
+    "Pour over stock to almost cover.",
+    "Cover with butter paper, and then cover the pan tightly with a lid.",
+    "Bake at 180C for about 2 hours.",
+    "Serve with fresh white bread and butter."
+],
+    pictureLink: SausageCass,
+    }),]
