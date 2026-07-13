@@ -11,6 +11,7 @@ import RecipeSearchPage from "./pages/RecipeSearchPage";
 import { RecipeFiles } from "./data/RecipeFiles";
 import RecipePage from "./pages/RecipePage";
 import { useEffect } from "react";
+import IngredientsCalculator from "./pages/IngredientsCalculatorPage";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -39,6 +40,12 @@ function App() {
               >
                 Search Recipes
               </NavLink>
+              <NavLink
+                to="/IngredientsCalculator"
+                className="hover:opacity-60 text-l text-right "
+              >
+                Ingredients Calculator
+              </NavLink>
             </div>
           </div>
         </header>
@@ -50,6 +57,10 @@ function App() {
               element={<RecipeSearchPage recipes={RecipeFiles} />}
             />
             <Route path="/Recipes/:id" element={<RecipePage />} />
+            <Route
+              path="/IngredientsCalculator"
+              element={<IngredientsCalculator />}
+            />
           </Routes>
         </div>
         <footer className="text-font bg-red-800 flex justify-between items-center text-sm text-white w-full">
